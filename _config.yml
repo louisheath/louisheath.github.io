@@ -14,7 +14,7 @@ description:  Write an awesome description for your new site here. You can edit 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  louisheath
 
 # Build settings
 markdown: kramdown
