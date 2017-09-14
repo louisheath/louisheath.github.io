@@ -1,10 +1,12 @@
 body {
 	background: url(assets/polzeath.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	min-height: 100%;
 
 	padding-top: 15%;
-	
 	font-family: Muli;
 	color: #001a33;
 }
