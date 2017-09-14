@@ -1,6 +1,7 @@
- body {
+body {
 	background: url(assets/polzeath.jpg) no-repeat center fixed;
 	background-size: cover;
+	min-height: 100%;
 
 	padding-top: 15%;
 	
