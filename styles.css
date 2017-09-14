@@ -23,6 +23,10 @@ p {
 	padding-bottom: 10px;
 }
 
+#strava {
+	text-decoration: underline;
+}
+
 /* SOCIAL MEDIA LINKS */
 .fa {
 	font-size: 55px;
