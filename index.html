@@ -1,28 +1,56 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="home">
- <div class="top card">
-    <!--<a class="email" href="mailto:{{site.email}}">{{site.email}}</a>-->
-    <p class="description">{{ site.description }}</p>
-    <!--<a href="about" class="btn">Read More</a>-->
-  </div>
-  <div class="posts card">
-      <div class="card-content white-text">
-      <span class="card-title">Posts</span>
 
-      <ul class="post-list">
-        {% for post in site.posts %}
-          <li>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </li>
-        {% endfor %}
-      </ul>
+	<title>Louis Heath</title>
 
-      <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
-      </div>
-   </div>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-</div>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
+
+</head>
+<body>
+	<div class="container">
+
+		<div class="row">
+			<h1>Welcome.</h1>
+		</div>
+		<div class="row">
+			<div id="text" class="col-sm-11">
+				<p>
+					I'm Louis, a computer science student at Bristol University.<br />
+					This site needs a little more work.
+				</p>
+			</div>
+			<div class="col-sm-1">
+				<div class="row">
+					<a href="http://linkedin.com/in/louisheath" target="_blank">
+						<i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+					<a href="http://github.com/louisheath" target="_blank">
+						<i class="fa fa-github-square" aria-hidden="true"></i></a>
+					<a href="http://twitter.com/houisleath" target="_blank">
+						<i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+	<script src='https://code.jquery.com/jquery-3.2.1.js'></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+</body>
+</html>
+
+<!--
+
+http://fontawesome.io/icons/
+https://unsplash.com/
+https://fonts.google.com/
+https://www.w3schools.com/colors/colors_picker.asp
+
+-->
