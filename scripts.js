@@ -6,6 +6,6 @@ window.mobilecheck = function() {
 };
 
 if (window.mobilecheck()) {
-	alert("Unfortunately my background doesn't work on mobile devices. If you know a fix please let me know! I've spent ages googling to no avail");
+	alert("If you know a fix for my background please let me know! I've spent hours googling to no avail");
 }
 else console.log("Not a mobile device");
