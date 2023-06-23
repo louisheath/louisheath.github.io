@@ -1,6 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      window.userledSettings = {
+        app_id: "360e1a78-2fb5-497b-81b6-5dc7f71b88f6",
+      };
+      (function () {
+        if (window.Userled) return;
+        // First time booting. Load and attach script.
+        window.Userled = function () {
+          // Use queue to buffer commands.
+          return userled.call(arguments);
+        };
+        var userled = window.Userled;
+        userled.call = function (args) {
+          return new Promise(function (resolve, reject) {
+            var newArgs = [].concat.apply([resolve, reject], args);
+            userled.queue.push(newArgs);
+          });
+        };
+        userled.queue = [];
+        userled.snippetVersion = "2.0.0";
+
+        var injectSDK = function () {
+          var script = document.createElement("script");
+          script.type = "text/javascript";
+          script.src = "https://api.userled.io/static/sdk.bundle.js";
+          var tag = document.getElementsByTagName("script")[0];
+          tag.parentNode.insertBefore(script, tag);
+        };
+
+        injectSDK();
+
+        // Leave the below unminified for easier access
+        window.Userled("page");
+      })();
+    </script>
+
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <title>Pricing</title>
