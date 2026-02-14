@@ -1,7 +1,9 @@
 /* http://sixrevisions.com/css/responsive-background-image/ */
 
 /* Structure */
-html, body, .container {
+html,
+body,
+.container {
   height: 100%;
 }
 
@@ -10,7 +12,13 @@ html, body, .container {
   padding-right: 10%;
 }
 
-html, body, h1, p, a, div, section {
+html,
+body,
+h1,
+p,
+a,
+div,
+section {
   margin: 0;
   padding: 0;
   font: inherit;
@@ -46,6 +54,11 @@ p {
   text-decoration: underline;
 }
 
+.condition {
+  font-size: 0.9em;
+  color: #787878;
+}
+
 /* SOCIAL MEDIA LINKS */
 
 .icons {
@@ -69,29 +82,37 @@ a:visited {
     /* The file size of this background image is 93% smaller
      * to improve page load speed on mobile internet connections */
     background-image: url(../images/park-mobile.jpg);
-
   }
-  h1 { font-size: 3em; }
-  p { font-size: 0.8em; }
-  .fa { font-size: 2em; }
+  h1 {
+    font-size: 3em;
+  }
+  p {
+    font-size: 0.8em;
+  }
+  .fa {
+    font-size: 2em;
+  }
 }
 
-@media only screen and (max-width: 800px)
-                   and (max-height: 400px)
-                   and (orientation : landscape){
-    body {
-      padding-top: 0%;
-      background-position: top;
-    }
+@media only screen and (max-width: 800px) and (max-height: 400px) and (orientation: landscape) {
+  body {
+    padding-top: 0%;
+    background-position: top;
+  }
 }
 
 @media only screen and (max-width: 340px) {
-  html, body, .container {
+  html,
+  body,
+  .container {
     height: auto;
   }
-  h1 { font-size: 2.5em; }
-  p { font-size: 0.7em; }
-
+  h1 {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 0.7em;
+  }
 }
 
 /* GRID DEBUGGING */
