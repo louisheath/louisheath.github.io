@@ -94,6 +94,12 @@ a:visited {
   p {
     font-size: 0.8em;
   }
+  ul {
+    font-size: 0.8em;
+  }
+  #customPrice {
+    font-size: 0.8em;
+  }
   .fa {
     font-size: 2em;
   }
@@ -116,6 +122,12 @@ a:visited {
     font-size: 2.5em;
   }
   p {
+    font-size: 0.7em;
+  }
+  ul {
+    font-size: 0.7em;
+  }
+  #customPrice {
     font-size: 0.7em;
   }
 }
