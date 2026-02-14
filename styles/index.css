@@ -59,6 +59,11 @@ p {
   color: #787878;
 }
 
+#customPrice {
+  visibility: hidden;
+  font-style: italic;
+}
+
 /* SOCIAL MEDIA LINKS */
 
 .icons {
