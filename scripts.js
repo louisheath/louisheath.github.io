@@ -1,4 +1,4 @@
-/** @type {Record<string, {name: string, rates: Record<string, string>, hideBoardingHalf: boolean}>} */
+/** @type {Record<string, {name: string, rates: Record<string, string>}>} */
 const customPrices = {
   brucey: {
     name: "Bruce",
@@ -6,21 +6,19 @@ const customPrices = {
       dayCare: "£25",
       boarding: "£45",
     },
-    hideBoardingHalf: true,
   },
   shooby: {
     name: "Nikko",
     rates: {
       boarding: "£45",
     },
-    hideBoardingHalf: true,
   },
   gracey: {
     name: "Grace",
     rates: {
       boarding: "£40",
+      boardingHalf: "£20",
     },
-    hideBoardingHalf: true,
   },
 };
 
@@ -45,13 +43,6 @@ var renderCustomPrices = function (/** @type {string} */ petCode) {
     const span = document.getElementById(key);
     if (span) {
       span.textContent = value;
-    }
-  }
-
-  if (priceData.hideBoardingHalf) {
-    const half = document.getElementById("boardingHalf");
-    if (half) {
-      half.style.visibility = "hidden";
     }
   }
 };
